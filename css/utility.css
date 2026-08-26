@@ -21,7 +21,35 @@
   gap: var(--gap-lg);
 }
 
+.px-sm {
+  padding-inline: var(--px-sm);
+}
+
+.px-md {
+  padding-inline: var(--px-md);
+}
+
+.px-lg {
+  padding-inline: var(--px-lg);
+}
+
+.py-sm {
+  padding-block: var(--py-sm);
+}
+
+.py-md {
+  padding-block: var(--py-md);
+}
+
+.py-lg {
+  padding-block: var(--py-lg);
+}
+
 .d-flex {
   display: flex;
   align-items: center;
+}
+
+.between {
+  justify-content: space-between;
 }

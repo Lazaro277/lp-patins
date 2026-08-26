@@ -1,0 +1,66 @@
+header {
+
+  nav {
+
+    img {
+      cursor: pointer;
+    }
+
+    >img:first-child {
+      transition: all 300ms ease;
+
+      &:hover {
+        transform: rotate(90deg);
+      }
+
+      &:active {
+        animation: girar 700ms linear infinite;
+      }
+    }
+
+    div {
+      position: relative;
+
+      &::after {
+        content: "1";
+        position: absolute;
+        top: -.5rem;
+        right: -.3rem;
+        background-color: var(--snitap-sun);
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+      }
+
+      &:has(img:hover)::after {
+        animation: vibrar 250ms 200ms linear 3;
+      }
+
+      img {
+        width: 2.3rem;
+        transition: transform 400ms linear;
+
+        &:hover {
+          transform: rotate(-30deg);
+        }
+      }
+    }
+  }
+}
+
+@keyframes vibrar {
+  to {
+    transform: scale(120%);
+  }
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,2 +1,7 @@
 @import url(global.css);
-@import url(utility.csss);
+@import url(utility.css);
+@import url(header.css);
+@import url(hero.css);
+@import url(faixinha.css);
+@import url(photo-gallery.css);
+@import url(footer.css);
