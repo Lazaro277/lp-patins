@@ -1,12 +1,12 @@
 .container {
-  --max-width: 70em;
+  --max-width: 80em;
   margin-inline: auto;
   width: min(var(--max-width), 100% - var(--px-lg) * 2);
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 2fr;
+  grid-template-columns: 1fr;
 }
 
 .gap-sm {
@@ -52,4 +52,8 @@
 
 .between {
   justify-content: space-between;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
