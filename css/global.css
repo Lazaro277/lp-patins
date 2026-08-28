@@ -26,14 +26,14 @@
   --ff-syne: "Syne", system-ui, sans-serif;
   --ff-montserrat: "Montserrat", system-ui, sans-serif;
   --fw-base: 400;
-  --fw-md: 500;
-  --fw-bold: 800;
+  --fw-md: 600;
+  --fw-bold: 700;
 
-  --fs-sm: .875rem;
-  --fs-md: 1rem;
-  --fs-lg: 1.5rem;
+  --fs-sm: .75rem;
+  --fs-md: .875rem;
+  --fs-lg: 1rem;
   --fs-xl: 2.5rem;
-  --fs-2xl: 4rem;
+  --fs-2xl: 3.5rem;
 
   --py-sm: .875rem;
   --py-md: 1rem;
@@ -61,12 +61,14 @@ body {
 }
 
 h1 {
+  font-family: var(--ff-montserrat);
   font-size: var(--fs-2xl);
   line-height: 1.25;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-md);
 }
 
 h2 {
+  font-family: var(--ff-montserrat);
   font-size: var(--fs-xl);
   line-height: 1.20;
   font-weight: var(--fw-bold);
@@ -79,4 +81,14 @@ a {
 
 ul[role="list"] {
   list-style: none;
+}
+
+@media (width >=70em) {
+  :root {
+    --fs-sm: .875rem;
+    --fs-md: 1rem;
+    --fs-lg: 1.5rem;
+    --fs-xl: 2.5rem;
+    --fs-2xl: 4rem;
+  }
 }
