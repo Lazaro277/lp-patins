@@ -1,0 +1,63 @@
+#faixinha {
+  display: flex;
+  gap: 2rem;
+  overflow: hidden;
+  padding-block: 1.5rem;
+  background: linear-gradient(90deg, var(--snitap-sky-light), var(--snitap-sky-mid), var(--snitap-joy-light), var(--snitap-joy-mid));
+  background-size: 500% 500%;
+  animation: moverGradiente 40s ease infinite;
+
+  div {
+    animation: moverTexto 1.2s linear infinite;
+
+    img {
+      animation: brilhoEstrela 1.5s linear infinite;
+    }
+
+  }
+
+  &:hover {
+
+    div img {
+      animation: girar 1.5s linear infinite;
+    }
+  }
+}
+
+@keyframes moverGradiente {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes moverTexto {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-10.25%);
+  }
+}
+
+@keyframes brilhoEstrela {
+  0% {
+    transform: scale(140%);
+  }
+
+  50% {
+    transform: scale(100%);
+  }
+
+  100% {
+    transform: scale(140%);
+  }
+}
