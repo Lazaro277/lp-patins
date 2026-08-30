@@ -1,7 +1,6 @@
 #hero {
   justify-items: center;
   margin-bottom: 7rem;
-  display: none;
 
   >div:first-child {
     position: relative;
@@ -78,6 +77,10 @@
       }
     }
   }
+
+  div.grid {
+    justify-self: center;
+  }
 }
 
 @media (width >=70em) {
@@ -87,7 +90,7 @@
     align-items: center;
 
     >div:nth-child(1) {
-      transform: scale(80%);
+      transform: scale(90%);
       transform-origin: right center;
     }
 
@@ -96,6 +99,7 @@
 
       .grid {
         grid-template-columns: 1fr 1fr;
+        justify-self: start;
 
         > :first-child {
           order: 2;
@@ -107,124 +111,125 @@
       }
     }
   }
+}
 
 
-  @keyframes chegada {
-    from {
-      translate: 1000%;
-    }
-
-    to {
-      translate: 0%;
-    }
+@keyframes chegada {
+  from {
+    translate: 1000%;
   }
 
-  @keyframes aumentar {
-    from {
-      transform: scale(40%);
-    }
+  to {
+    translate: 0%;
+  }
+}
 
-    to {
-      transform: scale(100%);
-    }
+@keyframes aumentar {
+  from {
+    transform: scale(40%);
   }
 
-  @keyframes roletaPalavras {
-
-    0%,
-    5% {
-      content: "radical";
-      color: var(--snitap-sky-mid);
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    6% {
-      opacity: 0;
-      transform: translateY(-70%);
-    }
-
-    7% {
-      opacity: 0;
-      transform: translateY(70%);
-    }
-
-    9% {
-      content: "divertida";
-      color: var(--snitap-joy-mid);
-      opacity: 1;
-      transform: translateY(-25%);
-    }
-
-    11% {
-      transform: translateY(15%);
-    }
-
-    12%,
-    36% {
-      content: "divertida";
-      color: var(--snitap-joy-mid);
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    37% {
-      opacity: 0;
-      transform: translateY(-70%);
-    }
-
-    38% {
-      opacity: 0;
-      transform: translateY(70%);
-    }
-
-    40% {
-      content: "segura";
-      color: var(--snitap-leaf-mid);
-      opacity: 1;
-      transform: translateY(-25%);
-    }
-
-    42% {
-      transform: translateY(15%);
-    }
-
-
-    43%,
-    67% {
-      content: "segura";
-      color: var(--snitap-leaf-mid);
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    68% {
-      opacity: 0;
-      transform: translateY(-70%);
-    }
-
-    69% {
-      opacity: 0;
-      transform: translateY(70%);
-    }
-
-    71% {
-      content: "radical";
-      color: var(--snitap-sky-mid);
-      opacity: 1;
-      transform: translateY(-25%);
-    }
-
-    73% {
-      transform: translateY(15%);
-    }
-
-
-    74%,
-    100% {
-      content: "radical";
-      color: var(--snitap-sky-mid);
-      opacity: 1;
-      transform: translateY(0);
-    }
+  to {
+    transform: scale(100%);
   }
+}
+
+@keyframes roletaPalavras {
+
+  0%,
+  5% {
+    content: "radical";
+    color: var(--snitap-sky-mid);
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  6% {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+
+  7% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+
+  9% {
+    content: "divertida";
+    color: var(--snitap-joy-mid);
+    opacity: 1;
+    transform: translateY(-25%);
+  }
+
+  11% {
+    transform: translateY(15%);
+  }
+
+  12%,
+  36% {
+    content: "divertida";
+    color: var(--snitap-joy-mid);
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  37% {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+
+  38% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+
+  40% {
+    content: "segura";
+    color: var(--snitap-leaf-mid);
+    opacity: 1;
+    transform: translateY(-25%);
+  }
+
+  42% {
+    transform: translateY(15%);
+  }
+
+
+  43%,
+  67% {
+    content: "segura";
+    color: var(--snitap-leaf-mid);
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  68% {
+    opacity: 0;
+    transform: translateY(-70%);
+  }
+
+  69% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+
+  71% {
+    content: "radical";
+    color: var(--snitap-sky-mid);
+    opacity: 1;
+    transform: translateY(-25%);
+  }
+
+  73% {
+    transform: translateY(15%);
+  }
+
+
+  74%,
+  100% {
+    content: "radical";
+    color: var(--snitap-sky-mid);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
