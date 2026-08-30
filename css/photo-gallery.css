@@ -75,7 +75,25 @@
   }
 }
 
-@media (width >=70em) {
+@media (width <70em) {
+  #photo-gallery {
+
+    .content-image {
+      height: 17rem;
+    }
+  }
+}
+
+@media (width >=40em) {
+  #photo-gallery {
+
+    .content-image {
+      height: 27rem;
+    }
+  }
+}
+
+@media (width >=50em) {
   #photo-gallery {
     display: grid;
     grid-template-columns: repeat(5, 1fr);

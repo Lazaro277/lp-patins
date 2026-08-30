@@ -61,3 +61,24 @@
     transform: scale(140%);
   }
 }
+
+@media (width <40em) {
+  #faixinha {
+    padding-block: 1rem;
+
+    h3 {
+      font-size: var(--fs-md);
+    }
+  }
+}
+
+@media (width >40em) and (width <60em) {
+  #faixinha {
+    padding-block: 1.5rem;
+
+    h3 {
+      font-size: var(--fs-md);
+    }
+
+  }
+}

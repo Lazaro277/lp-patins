@@ -48,3 +48,19 @@
     }
   }
 }
+
+@media (width <40em) {
+  .btn {
+    padding: 1.3rem;
+    width: 20rem;
+    font-size: 1rem;
+  }
+}
+
+@media (width >=40em) and (width <60em) {
+  .btn {
+    padding: 1.5rem;
+    width: 20rem;
+    font-size: 1.5rem;
+  }
+}

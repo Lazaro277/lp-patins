@@ -1,4 +1,6 @@
 footer {
+  text-align: center;
+  justify-items: center;
 
   div.d-flex {
 
@@ -88,7 +90,7 @@ footer {
   }
 }
 
-@media (width >=70em) {
+@media (width >=50em) {
   footer {
     display: flex;
     justify-content: space-between;

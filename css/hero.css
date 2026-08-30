@@ -83,6 +83,40 @@
   }
 }
 
+@media (width <70em) {
+  #hero {
+    margin-bottom: 5rem;
+
+    >div:first-child {
+      width: 40%;
+    }
+
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+@media (width >=40em) {
+  #hero {
+
+    h1 {
+
+      margin-block: 3rem;
+      text-align: start;
+    }
+  }
+}
+
+@media (width >=70em) and (width <77em) {
+  #hero {
+
+    >div:first-child {
+      width: 60%;
+    }
+  }
+}
+
 @media (width >=70em) {
   #hero {
     display: flex;

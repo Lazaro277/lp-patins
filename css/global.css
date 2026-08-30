@@ -33,7 +33,7 @@
   --fs-md: 1.2rem;
   --fs-lg: 2rem;
   --fs-xl: 2.5rem;
-  --fs-2xl: 3.5rem;
+  --fs-2xl: 2.5rem;
 
   --py-sm: .875rem;
   --py-md: 1rem;
@@ -51,9 +51,9 @@
 html {
   font-family: var(--ff-syne);
   font-weight: var(--fw-base);
-  font-size: var(--fs-md);
   line-height: 1.5;
   color: var(--text-color);
+  width: 100%;
 }
 
 body {
@@ -88,6 +88,13 @@ a {
 
 ul[role="list"] {
   list-style: none;
+}
+
+@media (width >=40em) {
+  :root {
+    --fs-md: 1.7rem;
+    --fs-2xl: 3.5rem;
+  }
 }
 
 @media (width >=70em) {
