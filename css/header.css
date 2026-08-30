@@ -6,7 +6,7 @@ header {
       cursor: pointer;
     }
 
-    >img:first-child {
+    #logo {
       transition: all 300ms ease;
 
       &:hover {
@@ -54,8 +54,12 @@ header {
 }
 
 @keyframes vibrar {
-  to {
+  50% {
     transform: scale(120%);
+  }
+
+  100% {
+    transform: scale(100%);
   }
 }
 
