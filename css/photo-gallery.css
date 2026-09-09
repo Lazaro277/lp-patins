@@ -20,7 +20,11 @@
     cursor: pointer;
     animation: aparecerFotos linear both;
     animation-timeline: view();
-    animation-range: entry;
+    animation-range: 100px 400px;
+
+    &[content-delay] {
+      animation-range: 130px 430px;
+    }
 
     img {
       width: 100%;
@@ -47,7 +51,7 @@
 
       >div {
         margin-bottom: -4rem;
-        transition: margin-bottom 100ms 100ms linear;
+        transition: margin-bottom 100ms 150ms linear;
 
         img {
           width: 2rem;

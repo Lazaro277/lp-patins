@@ -5,7 +5,7 @@
   padding-block: 1.5rem;
   background: linear-gradient(90deg, var(--snitap-sky-light), var(--snitap-sky-mid), var(--snitap-joy-light), var(--snitap-joy-mid));
   background-size: 500% 500%;
-  animation: moverGradiente 40s ease infinite;
+  animation: moverGradiente 30s ease infinite;
 
   div {
     animation: moverTexto 1.2s linear infinite;

@@ -24,7 +24,7 @@
 
     img {
       width: 100%;
-      animation: chegada 1100ms ease-in-out backwards, aumentar 500ms 800ms ease-in-out both;
+      animation: chegada 1100ms ease backwards, aumentar 500ms 250ms ease-in-out both;
     }
 
 
@@ -72,7 +72,7 @@
           content: "radical";
           color: var(--snitap-sky-mid);
           position: absolute;
-          animation: roletaPalavras 7s 1s ease-in-out infinite;
+          animation: roletaPalavras 6s 1s ease-in-out infinite;
         }
       }
     }
@@ -149,11 +149,15 @@
 
 
 @keyframes chegada {
-  from {
+  0% {
     translate: 1000%;
   }
 
-  to {
+  50% {
+    translate: -10%;
+  }
+
+  100% {
     translate: 0%;
   }
 }
